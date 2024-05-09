@@ -746,7 +746,7 @@ body {
   left: 35%;
   transform: scale(1);
   transition-duration: 1.5s;
-  padding: 20px;
+  padding: 40px 40px;
 }
 [data-modal-close] {
   position: absolute;
@@ -760,21 +760,103 @@ body {
   padding: 6px;
 }
 
-/*.hero__button {
+.modal-title {
+  font-family: var(--primary-font);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--black);
+  padding-bottom: 12px;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form__position {
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--light-gray);
+}
+
+.modal-form__input {
+  outline: none;
+  margin-top: 4px;
+  border-radius: 4px;
+  height: 40px;
+  cursor: pointer;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  padding-left: 12px;
+}
+
+.modal-form__input:hover,
+.modal-form__input:focus {
+  border-color: var(--blue);
+}
+
+.modal-form__comments {
+  outline: none;
+  margin-top: 4px;
+  border-radius: 4px;
+  height: 35px;
+  cursor: pointer;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  padding-left: 16px;
+  padding-top: 12px;
+  height: 120px;
+}
+
+.modal-form__comments:hover,
+.modal-form__comments:focus {
+  border-color: var(--blue);
+}
+
+.modal-form__checked {
+  flex-direction: row;
+  align-items: center;
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+  color: var(--light-gray);
+  text-align: left;
+  gap: 8px;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
+.condition {
+  color: var(--blue);
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+}
+
+.modal-form__btn {
+  width: 200px;
+  height: 50px;
+  background-color: var(--blue);
+  color: var(--white);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.8;
+  letter-spacing: 0.06em;
   text-align: center;
-  color: var(--white);
-  background-color: var(--blue);
-  text-decoration: none;
-  border-radius: 4px;
-  cursor: pointer;
-  padding: 12px 24px;
-  border: 1px solid;
-  border-color: var(--blue);
-  margin-bottom: 200px;
-  width: 200px;
-  height: 50px;
-  align-self: center;
-}*/
+  margin: 0 auto;
+}
